@@ -29,7 +29,7 @@
   window.onload = function () {
     confetti.start();
 
-    iconHolder.innerHTML = `<i class="fa fa-pause"></i> &nbsp; Pause music`;
+    // iconHolder.innerHTML = `<i class="fa fa-pause"></i> &nbsp; Pause music`;
     hideLoader();
   };
 })();
