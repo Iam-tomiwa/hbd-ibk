@@ -1,0 +1,158 @@
+@import "./variables";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+%pseudo {
+  content: "";
+  background: rgba(255, 155, 23, 0.89);
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 10;
+}
+body {
+  overflow: hidden;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Satisfy";
+
+  &::before {
+    @extend %pseudo;
+    background: rgba(255, 50, 23, 0.89);
+    bottom: -30%;
+    left: -15%;
+  }
+  &::after {
+    @extend %pseudo;
+    top: -30%;
+    right: -15%;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  right: 0;
+  font-size: 1.5rem;
+  background-color: $white;
+}
+.hip {
+  position: fixed;
+  z-index: 1;
+
+  &:nth-child(1) {
+    top: -100%;
+    left: 20%;
+  }
+  &:nth-child(2) {
+    bottom: 10%;
+    right: 10%;
+  }
+}
+main {
+  position: relative;
+  width: 90vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 600px;
+  height: 100vh;
+  margin: 0 auto;
+
+  .left {
+    width: 45%;
+    height: 70vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .right {
+    width: 47%;
+    margin-left: 2rem;
+
+    #start {
+      background: rgb(93, 160, 228);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+      transition: 0.5s;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+      display: flex;
+      place-items: center;
+      cursor: pointer;
+    }
+    .italic {
+      text-align: right;
+      margin: 1rem 0;
+    }
+    .birthday {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #anim {
+        margin-top: -30px;
+        transform: rotate(90deg);
+      }
+    }
+
+    P {
+      color: #444;
+    }
+  }
+}
+h1 {
+  color: #1d1d1d;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-y: auto;
+    &::before {
+      bottom: -40%;
+      left: -18%;
+    }
+    &::after {
+      top: -40%;
+      right: -18%;
+    }
+  }
+
+  nav {
+    position: relative;
+  }
+  main {
+    width: 95vw;
+    flex-direction: column;
+    z-index: 30;
+    height: auto;
+    padding: 0 1rem;
+    .left,
+    .right {
+      margin: 1rem 0;
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 1.5rem;
+      }
+      #anim {
+        display: none;
+      }
+      #start {
+        margin: 1.5rem auto;
+      }
+    }
+  }
+}

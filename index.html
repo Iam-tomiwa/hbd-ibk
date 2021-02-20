@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Happy Birthday Ibukunoluwa" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+      type="text/css"
+      media="all"
+    />
+
+    <title>Happy Birthday Ibk!</title>
+    <style>
+      #preloader {
+        z-index: 30;
+        background: white;
+        color: #444;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: closeLoader 0.6s 4s ease forwards;
+      }
+      .fade-out {
+        transition: 2s;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #preloader h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        opacity: 1;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="preloader">
+      <h1>Happy Birthday Ibk!</h1>
+    </div>
+    <audio
+      id="audio"
+      loop
+      autoplay
+      style="display: none"
+      controls
+      src="./src/audio/song.mp3"
+    ></audio>
+
+    <nav>
+      <h1>Ibukunoluwa</h1>
+    </nav>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player
+      src="https://assets10.lottiefiles.com/packages/lf20_fnjH1K.json"
+      background="transparent"
+      speed="1"
+      class="hip"
+      style="width: 120px; height: 120px"
+      loop
+      autoplay
+    ></lottie-player>
+    <main>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+      <lottie-player
+        src="https://assets10.lottiefiles.com/packages/lf20_fnjH1K.json"
+        background="transparent"
+        speed="1"
+        class="hip"
+        style="width: 100px; height: 100px"
+        loop
+        autoplay
+      ></lottie-player>
+
+      <div class="left">
+        <img src="./src/images/ibk3.png" alt="" />
+      </div>
+      <div class="right">
+        <div class="birthday">
+          <h1>HAPPY BIRTHDAY IBUKUNOLUWA!</h1>
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_fnjH1K.json"
+            background="transparent"
+            speed="1"
+            id="anim"
+            style="width: 80px; height: 80px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <br />
+        <p>
+          Your smile is cause for celebration. Your love is the most precious
+          gift in the world. Your warm hugs could light a thousand birthday
+          candles. Happy Birthday to someone who makes life itself feel like a
+          special occasion.
+        </p>
+        <p>
+          One day a year isn’t enough to celebrate someone as special as you.
+        </p>
+        <br />
+        <i id="italic">- "With Love From Tomiwa"</i>
+        <button id="start"><i class="fa fa-play"></i> &nbsp; Play music</button>
+      </div>
+    </main>
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script src="./src/confetti.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
