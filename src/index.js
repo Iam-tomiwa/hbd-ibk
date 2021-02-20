@@ -26,6 +26,8 @@
       mute = false;
     }
   });
+  S
+song.oncanplaythrough = song.play()
   window.onload = function () {
     confetti.start();
 
