@@ -19,7 +19,13 @@
       iconHolder.innerHTML = `<i class="fa fa-pause"></i> &nbsp; Pause music`;
     }
   });
-
+  var mute = true;
+  document.body.addEventListener("mouseover", e => {
+    if (mute) {
+      song.play();
+      mute = false;
+    }
+  });
   window.onload = function () {
     confetti.start();
 

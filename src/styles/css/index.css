@@ -146,13 +146,8 @@ h1 {
   body {
     overflow-y: auto;
   }
-  body::before {
-    bottom: -40%;
-    left: -18%;
-  }
-  body::after {
-    top: -40%;
-    right: -18%;
+  body::before, body::after {
+    display: none;
   }
   nav {
     position: relative;
@@ -165,7 +160,7 @@ h1 {
             flex-direction: column;
     z-index: 30;
     height: auto;
-    padding: 0 1rem;
+    padding: 0;
   }
   main .left,
   main .right {

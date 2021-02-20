@@ -120,13 +120,9 @@ h1 {
 @media (max-width: 800px) {
   body {
     overflow-y: auto;
-    &::before {
-      bottom: -40%;
-      left: -18%;
-    }
+    &::before,
     &::after {
-      top: -40%;
-      right: -18%;
+      display: none;
     }
   }
 
@@ -138,7 +134,7 @@ h1 {
     flex-direction: column;
     z-index: 30;
     height: auto;
-    padding: 0 1rem;
+    padding: 0;
     .left,
     .right {
       margin: 1rem 0;
