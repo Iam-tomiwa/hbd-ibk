@@ -152,6 +152,9 @@ h1 {
   nav {
     position: relative;
   }
+.hip{
+position: absolute;
+}
   main {
     width: 95vw;
     -webkit-box-orient: vertical;
@@ -162,6 +165,10 @@ h1 {
     height: auto;
     padding: 0;
   }
+.main .left{
+min-height: 60vh;
+height: 400px;
+}
   main .left,
   main .right {
     margin: 1rem 0;
