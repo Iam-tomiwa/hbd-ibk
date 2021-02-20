@@ -140,9 +140,6 @@ h1 {
       margin: 1rem 0;
       width: 100%;
       text-align: center;
-      h1 {
-        font-size: 1.5rem;
-      }
       #anim {
         display: none;
       }
@@ -150,5 +147,8 @@ h1 {
         margin: 1.5rem auto;
       }
     }
+  }
+  h1 {
+    font-size: 1.5rem;
   }
 }

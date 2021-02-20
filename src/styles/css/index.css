@@ -168,10 +168,6 @@ h1 {
     width: 100%;
     text-align: center;
   }
-  main .left h1,
-  main .right h1 {
-    font-size: 1.5rem;
-  }
   main .left #anim,
   main .right #anim {
     display: none;
@@ -179,5 +175,8 @@ h1 {
   main .left #start,
   main .right #start {
     margin: 1.5rem auto;
+  }
+  h1 {
+    font-size: 1.5rem;
   }
 }
